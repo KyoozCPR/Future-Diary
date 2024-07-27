@@ -56,3 +56,19 @@ button {
     font-weight: 700;
     border: 2.5px solid rgb(227, 139, 154);
 }
+
+#slider {
+    display:flex;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.characters {
+    background-color: rgb(227, 139, 154);
+    margin-right: 40px;
+    width: 200px;
+    height:200px;
+    border-radius: 20px;
+    box-shadow: 25px black;
+}
