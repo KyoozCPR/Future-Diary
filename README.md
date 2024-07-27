@@ -1,3 +1,6 @@
+![Alt text](static/images/logo.png)
+
+
 # Future Diary - Social Media App
 this a Future Diary social media app built in Full Stack Django with SQL lite 
 
