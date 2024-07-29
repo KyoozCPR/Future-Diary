@@ -2,13 +2,12 @@ body {
     padding: 0;
     margin: 0;
     color: white;
-    background-color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-#main-wrapper{
+#main-wrappper{
     position: relative;
     text-align: center;
     background-color: black;
@@ -59,16 +58,51 @@ button {
 
 #slider {
     display:flex;
-    justify-content: center;
-    background-color: white;
+    justify-content: space-evenly;
+    margin-bottom: 10em;
 
 }
 
 .characters {
-    background-color: rgb(227, 139, 154);
-    margin-right: 40px;
-    width: 200px;
-    height:200px;
+    width: 300px;
+    height:350px;
     border-radius: 20px;
     box-shadow: 25px black;
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* stack flex items vertically */
+    position: relative;
+}
+
+#yuno {
+    background-color: rgb(199, 119, 133);;
+}
+
+#minene {
+    background-color: rgb(53, 18, 85);
+}
+
+#nishi {
+    background-color: rgb(170, 133, 84);
+}
+
+
+
+#aru {
+    background-color: rgb(75, 75, 228);
+}
+
+.name {
+    z-index:5;
+    position: absolute;
+    left: 30px;
+    top: 250px;
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+p{
+    margin: 0;
 }

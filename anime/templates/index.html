@@ -15,20 +15,21 @@
     <title>Document</title>
 
 </head>
-<style>
-    
-    
 
-</style>
 
 <body>
+    <script>
+        function characters() {
+            document.getElementById("slider").scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
     <div id="main-wrappper">
        
         <div id="navbar">
             <img src="{% static  'images/logo.png' %}" height="50px" width="120px">
-            <button>EXPLORE CHARACTERS</button>
+            <button onclick="characters()">EXPLORE CHARACTERS</button>
         </div>
-        <img style="opacity: 0.1;" src="https://wallpapercave.com/wp/wp2016151.jpg" width="100%" height="900px">
+        <img style="opacity: 0.1; background-color: black;" src="https://wallpapercave.com/wp/wp2016151.jpg" width="100%" height="900px">
         
         
         <div id="title-container">
@@ -42,10 +43,10 @@
     </div>
     <div id="gradient"></div>
     <div id="slider">
-        <div class="characters"><p>character 1</p></div>
-        <div class="characters"><p>character 2</p></div>
-        <div class="characters"><p>character 3</p></div>
-        <div class="characters"><p>character 4</p></div>
+        <div class="characters" id="yuno"><p class="name">YUNO GASAI</p><img class="character" src="{% static 'images/YunoGasai.png' %}" witdh="200px" height="350px"></div>
+        <div class="characters" id="minene"><p class="name">MINENE URYUU</p><img class="character" src="{% static 'images/minene_uryuu.png' %}" witdh="200px" height="350px"></div>
+        <div class="characters" id="nishi"><p class="name">MASUMI NISHIJIMA</p><img class="character" src="{% static 'images/nishijima.png' %}" witdh="200px" height="350px"></div>
+        <div class="characters" id="aru"><p class="name">ARU AKISE</p><img class="character" src="{% static 'images/aru.png' %}" witdh="200px" height="350px"></div>
     </div>
     
 </body>
