@@ -1,4 +1,5 @@
 body {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: white;
@@ -43,10 +44,16 @@ body {
 #navbar {
     width: 80%;
     position: absolute;
-    margin: 5em;
+    margin-top: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
     display:flex;
     justify-content: space-between;
     z-index: 10;
+}
+
+#navbar button {
+    border: 2.5px solid rgb(227, 139, 154);
 }
 
 button {
@@ -54,48 +61,72 @@ button {
     padding:10px 20px;
     border-radius: 25px;
     font-weight: 700;
-    border: 2.5px solid rgb(227, 139, 154);
+   
 }
+
+
 
 #slider {
     display:flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-bottom: 10em;
 
 }
 
 .characters {
     width: 300px;
-    height:350px;
+    height: 350px;
     border-radius: 20px;
-    box-shadow: 25px black;
-    display: flex;           /* establish flex container */
-    flex-direction: column;  /* stack flex items vertically */
-    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px black;
+}
+
+.characters img {
+    width: 100%;
+    height:275px;
+    background-size: cover;
 }
 
 #yuno {
     background-color: rgb(199, 119, 133);;
 }
 
+
 #minene {
     background-color: rgb(53, 18, 85);
 }
 
+
 #nishi {
     background-color: rgb(170, 133, 84);
-}
+} 
+
 
 
 #aru {
     background-color: rgb(75, 75, 228);
 }
 
+
+.inner-character {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+.inner-character p {
+    display: inline-block
+}
+
+.about {
+    border-radius: 5px;
+    
+}
+
 .name {
-    z-index:5;
-    position: absolute;
-    left: 30px;
-    top: 250px;
     border-bottom: 2px solid white;
     color: white;
     font-weight: bold;
@@ -103,6 +134,3 @@ button {
 
 
 
-p{
-    margin: 0;
-}
