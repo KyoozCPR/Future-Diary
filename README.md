@@ -17,7 +17,7 @@ Before you begin, ensure you have the following installed on your local machine:
 2. Clone the repository by running the following command:
 
    ```bash
-   git clone https://github.com/KyoozCPR/Portfolio-website.git
+   git clone https://github.com/KyoozCPR/Future-Diary.git
 3. Install the project dependencies:
    ```bash
    pip install -r requirements.txt
