@@ -1,6 +1,11 @@
+{% load static %}
+
 <html>
     <head></head>
     <body>
-        <h1>{{character.name}}<h1>
+        <h1>{{character.name}}</h1>
+        <p>{{character.description}}</p>
+        <img src="{% static '{{character.image_path}}' %}">
+    
     </body>
 </html>
