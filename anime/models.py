@@ -10,5 +10,8 @@ class AnimeCharacter(models.Model):
     def __str__(self):
         return self.name
     
+
+    #create a function to return the full image path
+    
     def get_image_url(self):
         return f'{settings.STATIC_URL}{self.image_path}'

@@ -8,6 +8,11 @@ body {
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+    
+}
+
 #main-wrappper{
     position: relative;
     text-align: center;

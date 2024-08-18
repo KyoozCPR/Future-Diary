@@ -5,7 +5,7 @@
     <body>
         <h1>{{character.name}}</h1>
         <p>{{character.description}}</p>
-        <img src="{% static '{{character.image_path}}' %}">
-    
+        <img src="{% static character.image_path %}" alt="{{ character.name }}">
+
     </body>
 </html>
