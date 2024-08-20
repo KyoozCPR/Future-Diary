@@ -5,7 +5,9 @@ from django.conf import settings
 class AnimeCharacter(models.Model):
     description = models.TextField(max_length=500)
     name = models.CharField(max_length=50)
+    likes = models.IntegerField(default=0)
     image_path = models.CharField(max_length=255)
+    highlight_episode = models.CharField(max_length=150, default="https://www.youtube.com/watch?v=KfznTm8mJA4")
 
     def __str__(self):
         return self.name
@@ -15,3 +17,5 @@ class AnimeCharacter(models.Model):
     
     def get_image_url(self):
         return f'{settings.STATIC_URL}{self.image_path}'
+    
+
