@@ -1,9 +1,9 @@
 #character-section {
     background-color: rgb(27, 26, 26);
-    
+    padding:20px 10px;
 }
 
 #character-section img{
-    object-fit: cover;
-    z-index: -1;
+    width: 500px;
+    height: 600px;
 }
