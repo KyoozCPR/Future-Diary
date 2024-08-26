@@ -5,7 +5,10 @@
         <link rel="stylesheet" href="{% static 'css/character.css' %}">
 {% endblock %}
 {% block section %}
-        <h1>{{character.name}}</h1>
-        <p>{{character.description}}</p>
-        <img src="{% static character.image_path %}" alt="{{ character.name }}">
+        <div id="character-section">
+                <h1>{{character.name}}</h1>
+                <p>{{character.description}}</p>
+                <img src="{% static character.image_path %}" alt="{{ character.name }}">
+        </div>
+
 {% endblock %}
