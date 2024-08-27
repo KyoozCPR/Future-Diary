@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
-
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.core.exceptions import ValidationError
 
 class AnimeCharacter(models.Model):
     description = models.TextField(max_length=500)
@@ -18,4 +19,7 @@ class AnimeCharacter(models.Model):
     def get_image_url(self):
         return f'{settings.STATIC_URL}{self.image_path}'
     
+    from django.db import models
+
+
 
