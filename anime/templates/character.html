@@ -6,7 +6,15 @@
 {% endblock %}
 {% block section %}
         <div id="character-section">
-                <h1>{{character.name}}</h1>
+                {% if character.name == "YUNO GASAI" %}
+                        <h1 id="yuno-name">{{character.name}}</h1>
+                {% elif character.name == "MINENE URYUU" %}
+                        <h1 id="minene-name">{{character.name}}</h1>
+                {% elif character.name == "MASUMI NISHIJIMA" %}
+                        <h1 id="nishi-name">{{character.name}}</h1>
+                {% elif character.name == "ARU AKISE" %}
+                        <h1 id="aru-name">{{character.name}}</h1>
+                {% endif %}
                 <p>{{character.description}}</p>
                 <img src="{% static character.image_path %}" alt="{{ character.name }}">
         </div>
