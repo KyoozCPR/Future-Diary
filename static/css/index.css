@@ -213,5 +213,20 @@ button {
     background: linear-gradient(180deg, var(--aru) 5%, rgba(255, 255, 255, 0) 100%);
 }
 
+.section {
+    margin-top: 4em;
+    padding-left: 20px; 
+    margin-left:0;
+    color: var(--yuno);
+    
+}
+
+.line {
+    background: linear-gradient(78deg, #fff, #fff, hsla(0, 0%, 100%, 0));
+    height: 1px;
+    width: 20em;
+    margin-left: 20px;
+   
+}
 
 
