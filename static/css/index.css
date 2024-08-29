@@ -167,14 +167,15 @@ button {
 }
 
 #character-section p {
-    padding-left: 20px;
+    padding-left: 10%;
     font-weight: 300;
 }
 
 #character-section h1 {
-    padding-left: 20px;
+    padding-left: 10%;
     margin-top: 0px;
 }
+
 
 #character-section #yuno-name {
     color: var(--yuno);
@@ -215,7 +216,7 @@ button {
 
 .section {
     margin-top: 4em;
-    padding-left: 20px; 
+    padding-left: 10%; 
     margin-left:0;
     color: var(--yuno);
     
@@ -225,8 +226,14 @@ button {
     background: linear-gradient(78deg, #fff, #fff, hsla(0, 0%, 100%, 0));
     height: 1px;
     width: 20em;
-    margin-left: 20px;
+    margin-left: 10%;
    
+}
+
+iframe {
+    margin-left: 10%;
+    margin-top: 4em; 
+     
 }
 
 
