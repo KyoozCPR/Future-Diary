@@ -18,11 +18,11 @@
         <div id="character-section">
                 {% if character.name == "YUNO GASAI" %}
                         <div class="gradient" id="grandient-yuno"></div>
-                        <h1 id="yuno-name">{{character.name}}</h1>
+                        <h1 class="section" id="yuno-name">{{character.name}}</h1>
                         <p>{{character.description}}</p>
                         
                         <img src="{% static character.image_path %}" alt="{{ character.name }}">
-                        <h2  class="section">BEST MOMENTS</h2>
+                        <h2  class="section" id="yuno-name">BEST MOMENTS</h2>
                         <div class="line"></div>
                         <iframe width="560" height="315"
                                 src="{{character.highlight_episode}}" 
@@ -31,33 +31,33 @@
                         </iframe>
                 {% elif character.name == "MINENE URYUU" %}
                         <div class="gradient" id="grandient-minene"></div>
-                        <h1 id="minene-name">{{character.name}}</h1>
+                        <h1 class="section" id="minene-name">{{character.name}}</h1>
                         <p>{{character.description}}</p>
                         
                         <img src="{% static character.image_path %}" alt="{{ character.name }}">
-                        <h2  class="section">BEST MOMENTS</h2>
+                        <h2  class="section" id="minene-name">BEST MOMENTS</h2>
                         <div class="line"></div>
                         <iframe width="560" height="315"
                                 src="{{character.highlight_episode}}">
                         </iframe>
                 {% elif character.name == "MASUMI NISHIJIMA" %}
                         <div class="gradient" id="grandient-nishi"></div>
-                        <h1 id="nishi-name">{{character.name}}</h1>
+                        <h1 class="section" id="nishi-name">{{character.name}}</h1>
                         <p>{{character.description}}</p>
                         
                         <img src="{% static character.image_path %}" alt="{{ character.name }}">
-                        <h2  class="section">BEST MOMENTS</h2>
+                        <h2  class="section" id="nishi-name">BEST MOMENTS</h2>
                         <div class="line"></div>
                         <iframe width="560" height="315"
                                 src="{{character.highlight_episode}}">
                         </iframe>
                 {% elif character.name == "ARU AKISE" %}
                         <div class="gradient" id="grandient-aru"></div>
-                        <h1 id="aru-name">{{character.name}}</h1>
+                        <h1 class="section" id="aru-name">{{character.name}}</h1>
                         <p>{{character.description}}</p>
                         
                         <img src="{% static character.image_path %}" alt="{{ character.name }}">
-                        <h2  class="section">BEST MOMENTS</h2>
+                        <h2  class="section" id="aru-name">BEST MOMENTS</h2>
                         <div class="line"></div>
                         <iframe width="560" height="315"
                                 src="{{character.highlight_episode}}">
