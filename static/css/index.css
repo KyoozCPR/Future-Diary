@@ -287,3 +287,15 @@ iframe {
     .line {margin-left:0;}
 }
 
+@media only screen and (max-width: 1450px) {
+    #character-section2 img {
+        max-height: 67%;
+        margin-right: 0;
+        right: 0;
+    }
+    iframe {
+        width: 440px;
+        height: 270px;
+    }
+}
+
