@@ -10,10 +10,10 @@ body {
 
 
 :root {
-    --yuno: rgb(255, 150, 167);
-    --minene: #c156ff;
-    --nishi: rgb(170, 133, 84);
-    --aru: rgb(75, 75, 228);
+    --yuno: rgb(230,150,161);
+    --minene: rgb(120,74,122);
+    --nishi: rgb(141,100,57);
+    --aru: rgb(90, 90, 205);
 }
 
 
@@ -160,21 +160,37 @@ button {
     color: white;
     font-weight: bold;
 }
-
-
-#character-section img{
-    width: 500px;
-    height: 600px;
+#character-section {
+    position: relative;
+}
+#character-section2 {
+    max-width: 1650px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-#character-section p {
+#character-section2 img{
+    max-width: 100%;
+    border: 0;
+    max-height: 80%;
+    position: absolute;
+    right: 0;
+    margin-right:7.5%;
+    bottom: 60px;
+    z-index: 4;
+    display: block;
+}
+
+#character-section2 p {
     padding-left: 10%;
     font-weight: 300;
+    
 }
 
-#character-section h1 {
+#character-section2 h1 {
     padding-left: 10%;
     margin-top: 0px;
+    font-size: 75px;
 }
 
 
@@ -202,6 +218,7 @@ button {
 .section {
     padding-left: 10%; 
     margin-left:0;
+    width:50%
 }
 
 #yuno-name {
@@ -238,4 +255,35 @@ iframe {
      
 }
 
+@media only screen and (max-width: 1000px) {
+    #character-section2{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .section{
+        width:100%
+    }
+    #character-section p {
+        padding-left: 0;
+        width:60%;
+    }
+    #character-section h1 {
+        padding-left: 0;
+    }
+    #character-section h2 {
+        padding-left: 0;
+    }
+
+    #character-section2 img {
+        position:unset;
+        height: 550px;
+        width:auto;
+        text-align: center;
+        margin-right: 0;
+    }
+    .line {margin-left:0;}
+}
 
