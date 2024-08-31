@@ -180,6 +180,13 @@ button {
     z-index: 4;
     display: block;
 }
+#character-section2 #minene-img{
+    bottom:350px;
+}
+
+#character-section2 #nishi-img {
+    max-height: 68%;
+}
 
 #character-section2 p {
     padding-left: 10%;
@@ -293,9 +300,23 @@ iframe {
         margin-right: 0;
         right: 0;
     }
+    #character-section2 h1 {font-size:70px;}
+
     iframe {
         width: 440px;
         height: 270px;
     }
+
+    #character-section2 #minene-img {
+        bottom: 350px;
+        max-height: 50%;
+        max-width: 50%;
+    }
+    #character-section2 #nishi-img {
+        bottom:350px;
+        max-height: 50%;
+        max-width: 50%;
+    }
+    
 }
 
