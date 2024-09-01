@@ -1,35 +1,25 @@
 {% extends "main.html" %}
 {% load static %}
 
-
 {% block section%}
-        
-    <div id="main-wrappper">
-       
-        <div id="navbar">
-            <img src="{% static  'images/logo.png' %}" height="50px" width="120px">
-            <button  id="main-button" onclick="characters()">EXPLORE CHARACTERS</button>
-        </div>
-        <img style="opacity: 0.1; background-color: black;" src="https://wallpapercave.com/wp/wp2016151.jpg" width="100%" height="900px">
-        
-        
-        <div id="title-container">
-            <h1>Hi! Explore all the characters of <p style="display:inline-block">未来日記</p></h1>
-           
-        </div>
-
-
-        
-        
-
-           
-        
+<div id="main-wrappper">
+    <div id="navbar">
+        <img src="{% static  'images/logo.png' %}" height="50px" width="120px">
+        <button id="main-button" onclick="characters()">EXPLORE CHARACTERS</button>
     </div>
-
+    <img style="opacity: 0.1; background-color: black;" src="https://wallpapercave.com/wp/wp2016151.jpg" width="100%" height="900px">
     
-    <div class="gradient" id="grandient-yuno"></div>
+    <div id="title-container">
+        <h1>Hi! Explore all the characters of <p style="display:inline-block">未来日記</p></h1>
+    </div>
+</div>
 
+<div class="gradient" id="grandient-yuno"></div>
 
+<!-- Slider container with arrows -->
+<div id="slider-container">
+    <div class="arrow left-arrow" onclick="sinistra()">&#10094;</div>
+    
     <div id="slider">
         <div class="characters yuno">
             <img class="character" src="{% static 'images/YunoGasai.png' %}">
@@ -41,13 +31,13 @@
         
         <div class="characters minene">
             <img class="character" src="{% static 'images/minene_uryuu.png' %}"> 
-            <div class="inner-character minene" >
+            <div class="inner-character minene">
                 <p class="name">MINENE URYUU</p>
                 <a href="{% url 'character' '2'%}" class="about">Explore</a>
             </div>
         </div>
 
-        <div class="characters nishi" >
+        <div class="characters nishi">
             <img class="character" src="{% static 'images/nishijima.png' %}">
             <div class="inner-character nishi">
                 <p class="name">MASUMI NISHIJIMA</p>
@@ -55,20 +45,43 @@
             </div>
         </div>
 
-        <div class="characters aru" >
+        <div class="characters aru">
             <img class="character" src="{% static 'images/aru.png' %}">
             <div class="inner-character aru">
                 <p class="name">ARU AKISE</p>
                 <a href="{% url 'character' '4'%}" class="about">Explore</a>
             </div>
         </div>
-
-
     </div>
-    <script>
-        function characters() {
-            document.getElementById("slider").scrollIntoView({behavior: 'smooth'});
-        }
-    </script>
-{% endblock %}
     
+    <div class="arrow right-arrow" onclick="scrollRight()">&#10095;</div>
+</div>
+
+<script>
+
+    const slider = document.getElementById('slider');
+
+    function characters() {
+        document.getElementById("slider-container").scrollIntoView({behavior: 'smooth'});
+    }
+
+    function sinistra() {
+        slider.scrollBy({
+            left: -slider.clientWidth / 2,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        slider.scrollBy({
+            left: slider.clientWidth / 2,
+            behavior: 'smooth'
+        });
+    }
+
+
+</script>
+
+
+
+{% endblock %}
