@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import AnimeCharacter
-
+from django.utils.text import slugify
 
 def home(request): 
     return render(request, "index.html")
@@ -8,6 +8,7 @@ def home(request):
 
 def character(request, id):
     character = AnimeCharacter.objects.get(id=id)
-    return render(request, "character.html", {"character": character})
+    name = slugify(character.name)
+    return render(request, "character.html", {"character": character, "name": name})
 
 

@@ -19,9 +19,13 @@ body {
 
 a {
     text-decoration: none;
-    
+    color: rgb(255, 255, 255);
+    font-weight: 600;
 }
 
+li {
+    list-style-type: none;
+}
 
 #main-wrappper{
     position: relative;
@@ -130,22 +134,22 @@ button {
 }
 
 
-.yuno {
+.yuno-gasai {
     background-color: var(--yuno);
 }
 
 
-.minene {
+.minene-uryuu {
     background-color: var(--minene);
 }
 
 
-.nishi {
+.masumi-nishijima {
     background-color: var(--nishi);
 } 
 
 
-.aru {
+.aru-akise {
     background-color: var(--aru);
 }
 
@@ -182,9 +186,6 @@ button {
     font-weight: bold;
 }
 
-#character-section {
-    position: relative;
-}
 
 
 #character-section2 {
@@ -198,18 +199,18 @@ button {
     border: 0;
     max-height: 80%;
     position: absolute;
-    right: -50px;
+    right: -90px;
     margin-right:7.5%;
     bottom: 60px;
     z-index: 4;
     display: block;
 }
-#character-section2 #minene-img{
-    bottom:350px;
+#character-section2 #minene-uryuu-img{
+    bottom:150px;
     max-height: 65%;
 }
 
-#character-section2 #nishi-img {
+#character-section2 #masumi-nishijima-img {
     max-height: 55%;
     bottom: 250px;
     right: -105px;
@@ -233,19 +234,19 @@ button {
     
 }
 
-#grandient-yuno {
+#gradient-yuno-gasai {
     background: linear-gradient(180deg, var(--yuno) 5%,rgba(255, 255, 255, 0) 100%);
 }
 
-#grandient-minene {
+#gradient-minene-uryuu {
     background: linear-gradient(180deg, var(--minene) 5%, rgba(255, 255, 255, 0) 100%);
 }
 
-#grandient-nishi{
+#gradient-masumi-nishijima{
     background: linear-gradient(180deg, var(--nishi) 5%, rgba(255, 255, 255, 0) 100%);
 }
 
-#grandient-aru {
+#gradient-aru-akise {
     background: linear-gradient(180deg, var(--aru) 5%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -255,19 +256,19 @@ button {
     width:50%
 }
 
-#yuno-name {
+#yuno-gasai-name {
     color: var(--yuno);
 
 }
- #minene-name {
+#minene-uryuu-name {
     color: var(--minene);
 }
 
-#nishi-name {
+#masumi-nishijima-name {
     color: var(--nishi);
 }
 
-#aru-name {
+#aru-akise-name {
     color: var(--aru);
 }
 
@@ -340,14 +341,14 @@ iframe {
         padding-left: 0;
         margin-left:0%;
     }
-    #character-section p {
+    #character-section2 p {
         padding-left: 0;
         width:60%;
     }
-    #character-section h1 {
+    #character-section2 h1 {
         padding-left: 0;
     }
-    #character-section h2 {
+    #character-section2 h2 {
         padding-left: 0;
     }
 
@@ -386,7 +387,7 @@ iframe {
         margin-right: 0;
         right: 0;
     }
-    #character-section2 h1 {font-size:60px;}
+    #character-section2 h1 {font-size:50px;}
 
     iframe {
         width: 440px;
@@ -397,12 +398,12 @@ iframe {
         color :rgb(27, 26, 26);
     }
 
-    #character-section2 #minene-img {
-        bottom: 350px;
+    #character-section2 #minene-uryuu-img {
+        bottom: 280px;
         max-height: 50%;
         max-width: 50%;
     }
-    #character-section2 #nishi-img {
+    #character-section2 #masumi-nishijima-img {
         bottom:350px;
         max-height: 50%;
         max-width: 50%;
