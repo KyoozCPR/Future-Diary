@@ -1,6 +1,21 @@
 var acc = document.getElementsByClassName("accordion");
 const slider = document.getElementById('slider');
+const popup_element = document.getElementById("popup");
+const play_button = document.getElementById("open");
 var i;
+
+function OpenPopup() {
+  
+  popup_element.style = "display: block; z-index: 1";
+  play_button.style = "display: none; z-index: 0";
+}
+
+function ClosePopup() {
+
+  play_button.style = "display: block; z-index: 1";
+  popup_element.style = "display: none; z-index: 0";
+}
+
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
