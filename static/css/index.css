@@ -83,13 +83,11 @@ button {
 }
 
 
-
-
 .arrow {
     cursor: pointer;
     font-size: 2rem;
     padding: 0 20px;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0);
     z-index: 2;
 }
 
@@ -358,6 +356,9 @@ iframe {
         
     }
     
+    .arrow {
+        color :rgb(27, 26, 26);
+    }
 
     #character-section2 img {
         position:unset;
@@ -390,6 +391,10 @@ iframe {
     iframe {
         width: 440px;
         height: 270px;
+    }
+
+    .arrow {
+        color :rgb(27, 26, 26);
     }
 
     #character-section2 #minene-img {
