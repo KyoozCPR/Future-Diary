@@ -18,7 +18,8 @@
                 #character-navbar{
                         display: flex;
                         justify-content: space-around;
-                        margin-top:3.5em;
+                        align-items: center;
+                        margin-top:3em;
                         
 
                 }
@@ -38,6 +39,7 @@
     <div class="gradient" id="gradient-{{name}}">
         <nav>
             <ul id="character-navbar">
+                <li><a href="{% url 'index' %}"><img src="{% static  'images/logo.png' %}" height="50px" width="120px"></a></li>
                 <li><a href="{% url 'character' '1' %}">Yuno Gasai</a></li>
                 <li><a href="{% url 'character' '2' %}">Minene Uryuu</a></li>
                 <li><a href="{% url 'character' '3' %}">Masumi Nishijima</a></li>
@@ -48,9 +50,10 @@
 
     <div id="character-section2">
         <h1 class="section" id="{{name}}-name">{{ character.name }}</h1>
+
         <p class="section">{{ character.description }}</p>
         
-        <button class="section accordion {{name}}">Section 1</button>
+        <button class="section accordion {{name}}">Biografia</button>
         <div class="panel">
             <p>Lorem ipsum...</p>
         </div>
