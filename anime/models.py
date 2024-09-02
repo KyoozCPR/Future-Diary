@@ -5,6 +5,7 @@ from django.core.exceptions import ValidationError
 
 class AnimeCharacter(models.Model):
     description = models.TextField(max_length=500)
+    diary = models.TextField(max_length=500)
     name = models.CharField(max_length=50)
     likes = models.IntegerField(default=0)
     image_path = models.CharField(max_length=255)
