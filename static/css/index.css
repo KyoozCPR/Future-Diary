@@ -259,6 +259,7 @@ button {
 #character-section2 p {
     padding-left: 10%;
     font-weight: 300;
+    width: 40%;
     
 }
 
@@ -350,17 +351,6 @@ iframe {
     margin-bottom: 0;
 }
   
-.panel {
-  padding: 0 18px;
-  display: none;
-  width:50%;
-  margin-left: 3.5%;
-  overflow: hidden;
-}
-
-.panel p {
-    padding: 0;
-}
 
 
 @media only screen and (max-width: 1000px) {
@@ -380,7 +370,6 @@ iframe {
         position: fixed;
         display:none;
         top: 5rem;
-        align-items: baseline;
         right: 0;
         flex-direction: column;
         background-color: #ffffff;
@@ -400,9 +389,10 @@ iframe {
     } 
     
 
-    nav li {
+    body nav li {
         margin: 2.5rem 0;
         margin-left: 0;
+        margin-right: 50px;
     }
 
     .hamburger {

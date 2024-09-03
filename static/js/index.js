@@ -32,7 +32,7 @@ function mobileMenu() {
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
+    var panel = this.nextElementSibling; //l'elemento successivo, quindi il p in questo caso
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {

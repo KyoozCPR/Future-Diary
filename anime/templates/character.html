@@ -67,9 +67,8 @@
         <p class="section">{{ character.description }}</p>
         
         <button class="section accordion {{name}}">Plot - Diary</button>
-        <div class="panel">
-            <p>{{character.diary}}</p>
-        </div>
+        <p style="display: none;">{{character.diary}}</p>
+        
         
         <img id="{{name}}-img" src="{% static character.image_path %}" alt="{{ character.name }}">
         
