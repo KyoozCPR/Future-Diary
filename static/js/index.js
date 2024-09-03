@@ -2,6 +2,8 @@ var acc = document.getElementsByClassName("accordion");
 const slider = document.getElementById('slider');
 const popup_element = document.getElementById("popup");
 const play_button = document.getElementById("open");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".character-navbar");
 var i;
 
 function OpenPopup() {
@@ -14,6 +16,16 @@ function ClosePopup() {
 
   play_button.style = "display: block; z-index: 1";
   popup_element.style = "display: none; z-index: 0";
+}
+
+
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("activate");
+    navMenu.classList.toggle("activate");
+
 }
 
 

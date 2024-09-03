@@ -102,6 +102,18 @@ li {
     z-index: 10;
 }
 
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ffffff;
+}
+
 
 button {
     font-family: "Poppins", sans-serif;
@@ -364,6 +376,40 @@ iframe {
         text-align: center;
 
     }
+    body .character-navbar{
+        position: fixed;
+        display:none;
+        top: 5rem;
+        align-items: baseline;
+        right: 0;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 30%; 
+        margin-right: 15%;
+        border-radius: 10px;
+        text-align: center;
+      
+    
+    }
+    .character-navbar.activate{
+        display: flex;
+    }
+
+    .character-navbar a {
+        color : black;
+    } 
+    
+
+    nav li {
+        margin: 2.5rem 0;
+        margin-left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
     .section{
         text-align: center;
         padding-left: 0;
