@@ -2,7 +2,7 @@
 
 
 # Future Diary - Web App
-this a web app built in Full Stack Django with SQL lite 
+A web app built in Full Stack Django with SQL lite 
 
 ## Prerequisites
 
