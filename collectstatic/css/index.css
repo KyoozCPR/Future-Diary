@@ -351,30 +351,27 @@ iframe {
     margin-bottom: 0;
 }
   
-#future-diary {
+body #future-diary {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     background-color: var(--yuno);
 }
 
-th, td {
+body th, td {
     padding: 12px;
+    color: black;
     border: 1px solid #ddd;
     text-align: left;
 }
 
-th {
-    background-color: #4CAF50;
-    color: white;
+
+body tr:nth-child(even) {
+    background-color: #000000;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
+body tr:hover {
+    background-color: #000000;
 }
 
 
