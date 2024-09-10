@@ -1,0 +1,29 @@
+#character-section {
+    background-color: rgb(27, 26, 26);
+    padding:20px 10px;
+}
+
+#character-section img{
+    width: 500px;
+    height: 600px;
+}
+
+
+#yuno {
+    color: rgb(199, 119, 133);;
+}
+
+
+#minene {
+    color: rgb(53, 18, 85);
+}
+
+
+#nishi {
+    color: rgb(170, 133, 84);
+} 
+
+
+#aru {
+    color: rgb(75, 75, 228);
+}

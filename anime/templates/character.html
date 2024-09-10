@@ -1,9 +1,6 @@
 {% extends "main.html" %}
 {% load static %}
 
-{% block head %}
-        <link rel="stylesheet" href="{% static 'css/character.css' %}">
-{% endblock %}
 {% block section %}
         <style>
                 body{ 
@@ -38,8 +35,23 @@
                 nav li {
                     margin-left: 5rem;
                 }
-
+                .like-dislike {
+                    margin-top: 2em;
+                    gap: 20px;
+                }
                 
+
+                .like-dislike button {
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .like-dislike span {
+                    font-size: 16px;
+                    color: #1b1a1a;
+                }
+
 
         </style> 
 
@@ -74,8 +86,30 @@
         
         <h2 class="section" id="{{name}}-name">BEST MOMENTS</h2>
         <div class="line"></div>
-        
-        <iframe width="560" height="315" src="{{ character.highlight_episode }}" frameborder="0"></iframe>
+       
+        <iframe width="560" height="315" src="{{ character.highlight_episode }}" frameborder="0"></iframe>  
+        <div class="like-dislike section">
+            <button id="like-btn">👍 Like <span id="like-count">0</span></button>
+            <button id="dislike-btn">👎 Dislike <span id="dislike-count">0</span></button>
+        </div>
+        <script>
+          
+            let likeConta = 0;
+            let dislikeConta = 0;
+    
+         
+            document.getElementById('like-btn').addEventListener('click', function() {
+                likeConta++;
+                document.getElementById('like-count').textContent = likeConta;
+            });
+    
+           
+            document.getElementById('dislike-btn').addEventListener('click', function() {
+                dislikeConta++;
+                document.getElementById('dislike-count').textContent = dislikeConta;
+            });
+        </script>        
+
     </div>
 
 

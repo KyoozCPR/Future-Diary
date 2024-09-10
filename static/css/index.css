@@ -351,6 +351,30 @@ iframe {
     margin-bottom: 0;
 }
   
+#future-diary {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--yuno);
+}
+
+th, td {
+    padding: 12px;
+    color: black;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #000000;
+}
+
+tr:hover {
+    background-color: #000000;
+}
+
 
 
 @media only screen and (max-width: 1000px) {
@@ -388,7 +412,7 @@ iframe {
         color : black;
     } 
     
-
+    
     body nav li {
         margin: 2.5rem 0;
         margin-left: 0;

@@ -1,0 +1,526 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+    --yuno: rgb(230,150,161);
+    --minene: rgb(120,74,122);
+    --nishi: rgb(141,100,57);
+    --aru: rgb(90, 90, 205);
+}
+
+.play-button {
+    padding: 0;
+    margin-left: 15px;
+    border: none;
+    text-align: center;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#play-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#play-container h5 {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+li {
+    list-style-type: none;
+}
+
+#main-wrappper{
+    position: relative;
+    text-align: center;
+    background-color: black;
+
+}
+
+#trailer {
+    margin-left: 0;
+    margin-top: 2em;
+}
+
+
+#title-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 0;
+}
+
+
+#title-container p{
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(227, 139, 154);
+    font-weight:  900;
+    font-size: 60px;
+}
+
+#main-button {
+    border: 2.5px solid rgb(227, 139, 154);
+    transition-duration: 0.3s;
+}
+
+#main-button:hover {
+    padding: 7.5px 15px;
+    
+}
+
+
+#navbar {
+    width: 80%;
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    display:flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #ffffff;
+}
+
+
+button {
+    font-family: "Poppins", sans-serif;
+    padding:10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+   
+}
+
+
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 20px;
+    color: rgba(0, 0, 0, 0);
+    z-index: 2;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 0;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 0;
+}
+
+#slider {
+    display: flex;
+    margin-bottom: 10em;
+    justify-content: space-evenly;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+.characters {
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 2.5em;
+    box-shadow: 0px 2px 4px black;
+}
+
+
+.characters img {
+    width: 100%;
+    height:275px;
+    background-size: cover;
+}
+
+
+.yuno-gasai {
+    background-color: var(--yuno);
+}
+
+
+.minene-uryuu {
+    background-color: var(--minene);
+}
+
+
+.masumi-nishijima {
+    background-color: var(--nishi);
+} 
+
+
+.aru-akise {
+    background-color: var(--aru);
+}
+
+
+.inner-character {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+
+.inner-character p {
+    display: inline-block
+}
+
+
+.about {
+    border-radius: 5px;
+    padding:5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    color:black;
+    background-color: white;
+    
+    
+}
+ 
+
+.name {
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+#popup {
+    display: flex;
+    flex-direction: column;
+}
+
+#character-section2 {
+    max-width: 1650px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#character-section2 img{
+    max-width: 100%;
+    border: 0;
+    max-height: 80%;
+    position: absolute;
+    right: -90px;
+    margin-right:7.5%;
+    bottom: 60px;
+    z-index: 4;
+    display: block;
+}
+#character-section2 #minene-uryuu-img{
+    bottom:150px;
+    max-height: 65%;
+}
+
+#character-section2 #masumi-nishijima-img {
+    max-height: 55%;
+    bottom: 230px;
+    right: -105px;
+}
+
+#character-section2 p {
+    padding-left: 10%;
+    font-weight: 300;
+    width: 40%;
+    
+}
+
+#character-section2 h1 {
+    padding-left: 10%;
+    margin-top: 0px;
+    font-size: 75px;
+}
+
+
+.gradient{
+    height: clamp(150px, 20vw, 300px);
+    
+}
+
+#gradient-yuno-gasai {
+    background: linear-gradient(180deg, var(--yuno) 5%,rgba(255, 255, 255, 0) 100%);
+}
+
+#gradient-minene-uryuu {
+    background: linear-gradient(180deg, var(--minene) 5%, rgba(255, 255, 255, 0) 100%);
+}
+
+#gradient-masumi-nishijima{
+    background: linear-gradient(180deg, var(--nishi) 5%, rgba(255, 255, 255, 0) 100%);
+}
+
+#gradient-aru-akise {
+    background: linear-gradient(180deg, var(--aru) 5%, rgba(255, 255, 255, 0) 100%);
+}
+
+.section {
+    padding-left: 10%; 
+    margin-left:0;
+    width:50%
+}
+
+#yuno-gasai-name {
+    color: var(--yuno);
+
+}
+#minene-uryuu-name {
+    color: var(--minene);
+}
+
+#masumi-nishijima-name {
+    color: var(--nishi);
+}
+
+#aru-akise-name {
+    color: var(--aru);
+}
+
+h2 {
+    margin-top: 4em;
+}
+
+.line {
+    background: linear-gradient(78deg, #fff, #fff, hsla(0, 0%, 100%, 0));
+    height: 1px;
+    width: 20em;
+    margin-left: 10%;
+   
+}
+
+iframe {
+    margin-left: 10%;
+    margin-top: 4em; 
+     
+}
+
+.accordion {
+    padding-left: 5px;
+    margin-top: 1em;
+    color: rgb(27, 26, 26);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    width:40%;
+    margin-left: 9.5%;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+.active, .accordion:hover {
+    background-color: #fff;
+    margin-bottom: 0;
+}
+  
+#future-diary {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--yuno);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    body .characters {
+        flex: 0 0 50%;
+        margin-right: 10px;
+    }
+
+    #character-section2{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+    body .character-navbar{
+        position: fixed;
+        display:none;
+        top: 5rem;
+        right: 0;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 30%; 
+        margin-right: 15%;
+        border-radius: 10px;
+        text-align: center;
+      
+    
+    }
+    .character-navbar.activate{
+        display: flex;
+    }
+
+    .character-navbar a {
+        color : black;
+    } 
+    
+    
+    body nav li {
+        margin: 2.5rem 0;
+        margin-left: 0;
+        margin-right: 50px;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .section{
+        text-align: center;
+        padding-left: 0;
+        margin-left:0%;
+    }
+
+    .panel {
+        width: 100%;
+        margin-left: 40%;
+    }
+    #character-section2 p {
+        padding-left: 0;
+        width:60%;
+    }
+    #character-section2 h1 {
+        padding-left: 0;
+    }
+    #character-section2 h2 {
+        padding-left: 0;
+    }
+
+    iframe {
+        margin-left:0%;
+        
+    }
+
+    #play-container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrow {
+        color :rgb(27, 26, 26);
+    }
+
+    #character-section2 img {
+        position:unset;
+        height: 550px;
+        width:auto;
+        text-align: center;
+        right:0;
+        margin-right: 0;
+    }
+    .line {margin-left:0;}
+}
+
+@media only screen and (max-width: 1450px) {
+    #slider-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #character-section2 img {
+        max-height: 67%;
+        margin-right: 0;
+        right: 0;
+    }
+
+    #character-section2 h1 {font-size:50px;}
+
+    #title-container h1, #title-container p{
+        font-size: 25px;
+    }
+
+    iframe {
+        width: 440px;
+        height: 270px;
+    }
+
+    .arrow {
+        color :rgb(27, 26, 26);
+    }
+
+    #character-section2 #minene-uryuu-img {
+        bottom: 280px;
+        max-height: 50%;
+        max-width: 50%;
+    }
+    #character-section2 #masumi-nishijima-img {
+        bottom:300px;
+        max-height: 50%;
+        max-width: 50%;
+        right: 0;
+
+    }
+    .characters {
+        flex: 0 0 33%;
+        margin-right: 10px;
+    }
+    
+}
+
